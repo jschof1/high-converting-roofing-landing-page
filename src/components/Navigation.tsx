@@ -97,8 +97,8 @@ export function Navigation() {
     <nav 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled 
-          ? 'bg-white shadow-lg py-3' 
-          : 'bg-white/95 backdrop-blur-sm py-4'
+          ? 'bg-white shadow-lg py-1' 
+          : 'bg-white/95 backdrop-blur-sm py-1'
       }`}
     >
       <div className="container mx-auto px-4">
@@ -118,10 +118,10 @@ export function Navigation() {
               
               {/* Company Name */}
               <div className="hidden sm:block">
-                <div className="text-blue-900 leading-tight">
+                <div className="text-blue-900 text-md font-bold tracking-wide">
                   Finsbury Roofing
                 </div>
-                <div className="text-xs text-gray-600">& Builders</div>
+                <div className="text-lg text-gray-600 italic font-bold tracking-wide">& Builders</div>
               </div>
             </div>
           </div>
@@ -132,7 +132,7 @@ export function Navigation() {
               <NavigationMenuList className="gap-1">
                 {/* Services Dropdown */}
                 <NavigationMenuItem>
-                  <NavigationMenuTrigger className="text-gray-700 hover:text-blue-900">
+                  <NavigationMenuTrigger className="text-gray-700 hover:text-blue-900 text-md">
                     Services
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>

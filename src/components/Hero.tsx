@@ -71,23 +71,23 @@ export function Hero() {
         style={{ backgroundImage: `url('https://images.unsplash.com/photo-1669044719920-87e5f6167c3c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBob3VzZSUyMHJvb2Z8ZW58MXx8fHwxNzYyMjY3MDMxfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral')` }}
       />
       
-      <div className="container mx-auto px-4 py-16 md:py-24 relative z-10">
+      <div className="container mx-auto px-4 py-16 md:py-24 relative z-10 text-xl">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Left Column - Content */}
           <div className="space-y-6">
             <div className="flex flex-wrap gap-2">
-              <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+              <Badge variant="secondary" className="bg-white/20 text-white border-white/30 text-md">
                 <Shield className="w-3 h-3 mr-1" />
                 Licensed & Insured
               </Badge>
-              <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+              <Badge variant="secondary" className="bg-white/20 text-white border-white/30 text-md">
                 <Award className="w-3 h-3 mr-1" />
                 25+ Years Experience
               </Badge>
             </div>
 
-            <h1 className="text-4xl md:text-5xl lg:text-6xl">
-              Protect Your Home with <span className="text-red-400">Finsbury Park's</span> Most Trusted Roofing Experts
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold">
+              Protect Your Home with <span className="text-red-400">Finsbury Park's</span> Most Trusted <span className="text-red-400 font-extrabold">Roofing Experts</span>
             </h1>
 
             <p className="text-xl text-blue-100">
@@ -108,7 +108,7 @@ export function Hero() {
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Button 
                 size="lg" 
-                className="bg-red-600 hover:bg-red-700 text-white"
+                className="bg-red-600 hover:bg-red-700 text-white text-md"
                 onClick={scrollToContact}
               >
                 Get Free Estimate
@@ -116,7 +116,7 @@ export function Hero() {
               <Button 
                 size="lg" 
                 variant="outline" 
-                className="bg-white/10 border-white text-white hover:bg-white hover:text-blue-900"
+                className="bg-white/10 border-white text-white hover:bg-white hover:text-blue-900 text-md"
                 asChild
               >
                 <a href="tel:02071234567">
